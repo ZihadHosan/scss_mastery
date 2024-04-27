@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%; // 16px
+  font-family: $font-family-primary;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+// Browser Scrollbar customizatin
+
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 20px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: 10px;
+}
+
+/* For Internet Explorer and Edge */
+* {
+  -ms-overflow-style: scrollbar;
+}
