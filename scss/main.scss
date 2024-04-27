@@ -6,6 +6,9 @@
 @import 'base/utilities';
 // import all other scss files
 
+// Components
+@import 'components/buttons';
+
 @import 'layout/nav';
 @import 'pages/home';
 
