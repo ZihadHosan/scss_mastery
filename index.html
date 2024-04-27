@@ -10,8 +10,45 @@
 </head>
 
 <body>
-    <div style="height: 100vh; background-color: #313131;"></div>
+    <nav class="site_nav">
+        <!-- Site Logo -->
+        <div class="logo">
+            <a href="./">Basic/DEPT</a>
+        </div>
+
+        <!-- Main navigatin -->
+        <ul class="nav_list">
+            <li><a href="./">work</a></li>
+            <li><a href="./#">about</a></li>
+            <li><a href="./#">news</a></li>
+            <li><a href="./#">thinking</a></li>
+            <li><a href="./#">careers</a></li>
+            <li><a href="./#">contact</a></li>
+        </ul>
+        <!-- Navigation END -->
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+    <!-- Desktop overlay contnet open with 3 dot's click -->
+    <div class="desktop_overlay">
+        <h1 class="title">Under Construction</h1>
+    </div>
+
     <main>
+        <header>
+            <picture data-iesrc="./images/header.jpg" data-alt="Basic">
+                <source srcset="./images/header.webp" type="image/webp">
+                <source srcset="./images/header.jpg" type="image/jpeg">
+                <img class="header_bg" src="./images/header.jpg" alt="Basic">
+            </picture>
+        </header>
         <div style="height: 100vh; background-color: cyan;">
             <h1>Hello scss mastery 👋</h1>
         </div>
@@ -32,6 +69,9 @@
             const locomotiveScroll = new LocomotiveScroll();
         })();
     </script>
+
+    <!-- Custom JS -->
+    <script src="./js/custom.js"></script>
 
 </body>
 

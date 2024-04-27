@@ -1,0 +1,6 @@
+/* Responsive Breakpoints */
+@mixin mxw-767 {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
