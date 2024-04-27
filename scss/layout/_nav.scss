@@ -97,6 +97,10 @@
         gap: 0.3vw;
         cursor: pointer;
 
+        @include mxw-767{
+            gap: 5px;
+        }
+
         span{
             display: inline-block;
             width: 5px;

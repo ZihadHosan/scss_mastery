@@ -36,6 +36,10 @@ header{
     grid-template-columns: 50% auto;
     padding: 10vh 5%;
 
+    @include mxw-767{
+        grid-template-columns: auto;
+    }
+
     .content{
         p{
             font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
