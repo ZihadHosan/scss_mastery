@@ -1,6 +1,18 @@
 /* Responsive Breakpoints */
-@mixin mxw-767 {
-    @media screen and (max-width: 767px) {
-      @content;
-    }
+@mixin mxw-600 {
+  @media screen and (max-width: 600px) {
+    @content;
   }
+}
+
+@mixin mxw-767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mxw-1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

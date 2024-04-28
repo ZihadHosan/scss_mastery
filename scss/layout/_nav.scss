@@ -1,4 +1,4 @@
-.site_nav{
+.site_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,30 +12,30 @@
     height: 65px;
     z-index: 9;
 
-    @include mxw-767{
+    @include mxw-767 {
         height: 50px;
     }
 
     // Logo Style
-    .logo{
+    .logo {
         text-transform: uppercase;
         font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1920 - 320)));
 
-        a{
+        a {
             color: $color-tertiary;
         }
     }
 
     // Nav list style
-    .nav_list{
+    .nav_list {
         display: flex;
         gap: 2vw;
 
-        @include mxw-767{
+        @include mxw-767 {
             position: fixed;
             width: 100%;
             height: 100vh;
-            background:#3a3a3a;
+            background: #3a3a3a;
             left: 0;
             right: 0;
             bottom: 0;
@@ -47,23 +47,23 @@
             transition: clip-path 0.5s ease-in-out;
             top: 50px;
 
-            &.nav_list_close{
+            &.nav_list_close {
                 clip-path: inset(0% 0 0 0%);
             }
         }
 
-        li{
-            a{
+        li {
+            a {
                 color: $color-tertiary;
                 text-transform: uppercase;
                 position: relative;
                 font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1920 - 320)));
 
-                @include mxw-767{
+                @include mxw-767 {
                     font-size: 42px;
                 }
 
-                &::before{
+                &::before {
                     content: '';
                     position: absolute;
                     bottom: 0;
@@ -73,35 +73,38 @@
                     transition: all 0.25s ease-in;
                 }
 
-                &:hover{
-                    &::before{
+                &:hover {
+                    &::before {
                         width: 100%;
                         left: 0;
                     }
                 }
 
-                &:not(:hover){
-                    &::before{
+                &:not(:hover) {
+                    &::before {
                         right: 0;
                     }
                 }
             }
         }
-    }/* END of nav style */
+    }
+
+    /* END of nav style */
 
     // Hamburger Style
-    .hamburger{
+    .hamburger {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.3vw;
         cursor: pointer;
+        height: 30px;
 
-        @include mxw-767{
+        @include mxw-767 {
             gap: 5px;
         }
 
-        span{
+        span {
             display: inline-block;
             width: 5px;
             height: 5px;
@@ -111,25 +114,25 @@
     }
 }
 
-    // Desktop Overlay content
-    .desktop_overlay{
-        height: calc(100vh - 65px);
-        width: 100%;
-        position: fixed;
-        top: 65px;
-        left: 0;
-        right: 0;
-        background-color: rosybrown;
-        z-index: 2;
-        clip-path: inset(0% 0 0% 100%);
-        transition: clip-path 1s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 4.166666666666667vw;
+// Desktop Overlay content
+.desktop_overlay {
+    height: calc(100vh - 65px);
+    width: 100%;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: rosybrown;
+    z-index: 2;
+    clip-path: inset(0% 0 0% 100%);
+    transition: clip-path 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.166666666666667vw;
 
-        &.desktop_overlay_close{
-            clip-path: inset(0% 0 0 0%);
-        }
-
+    &.desktop_overlay_close {
+        clip-path: inset(0% 0 0 0%);
     }
+
+}

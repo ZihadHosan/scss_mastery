@@ -1,0 +1,135 @@
+.footer {
+    &__section {
+        background-color: $color-secondary;
+        padding-top: 10vh;
+        color: $color-tertiary;
+    }
+
+    &__top {
+        @include grid_2_col;
+        margin-bottom: 10vh;
+        grid-gap: 10vw;
+        padding: 0 5%;
+    }
+
+    &__logo {
+        max-width: 10vw;
+
+        @include mxw-767 {
+            max-width: 25vw;
+        }
+
+        path {
+            fill: $color-tertiary;
+        }
+    }
+
+    &__about_text {
+        color: $color-tertiary;
+        font-size: 31px;
+
+        a {
+            color: $color-tertiary;
+            text-decoration: underline;
+        }
+    }
+
+    &__bottom {
+        @include grid_2_col;
+        grid-gap: 10vw;
+        padding: 0 5% 10vh;
+
+        @include mxw-1024 {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__menu_wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5vw;
+
+        @include mxw-600 {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 2vh;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background-color: $color-tertiary;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__input {
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid $color-tertiary;
+            padding: 2vh 0;
+            outline: none;
+            color: $color-tertiary;
+        }
+
+        .btn_primary {
+            margin-top: 2vh;
+        }
+    }
+
+    &__link {
+        li {
+            &:not(:last-child) {
+                margin-bottom: .4vh;
+            }
+
+            a {
+                color: $color-tertiary;
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #5e5e5e;
+        background-color: #191918;
+        padding: 2vh 5%;
+
+        @include mxw-767 {
+            flex-direction: column;
+            gap: 1vh;
+        }
+
+        &__terms {
+            display: flex;
+            gap: 1vw;
+
+            li {
+                a {
+                    font-size: 13px;
+                    color: #5e5e5e;
+                }
+            }
+        }
+    }
+}

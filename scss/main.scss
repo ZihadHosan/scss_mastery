@@ -4,12 +4,12 @@
 @import 'base/typography';
 @import 'base/reset';
 @import 'base/utilities';
+@import 'layout/grid';
 // import all other scss files
 
 // Components
 @import 'components/buttons';
 
 @import 'layout/nav';
+@import 'layout/footer';
 @import 'pages/home';
-
-
