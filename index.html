@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav class="site_nav">
         <!-- Site Logo -->
         <div class="logo">
@@ -41,6 +43,8 @@
         <h1 class="title">Under Construction</h1>
     </div>
 
+    <!-- Navigation END -->
+
     <main>
 
         <!-- Header block -->
@@ -68,17 +72,45 @@
                 </svg>
             </div>
         </div>
-        <div
-            style="background-color: aqua; display: flex; align-items: center; justify-content: center; height: 100vh;">
-            <h1 data-scroll data-scroll-speed="0.4">Scroll Motion</h1>
+
+        <!-- Dragable Slider -->
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <ul class="image-list">
+                    <li><img class="image-item" src="images/img-1.jpg" alt="img-1"></li>
+                    <li><img class="image-item" src="images/img-2.jpg" alt="img-2"></li>
+                    <li><img class="image-item" src="images/img-3.jpg" alt="img-3"></li>
+                    <li><img class="image-item" src="images/img-4.jpg" alt="img-4"></li>
+                    <li><img class="image-item" src="images/img-5.jpg" alt="img-5"></li>
+                    <li><img class="image-item" src="images/img-6.jpg" alt="img-6"></li>
+                    <li><img class="image-item" src="images/img-7.jpg" alt="img-7"></li>
+                    <li><img class="image-item" src="images/img-8.jpg" alt="img-8"></li>
+                    <li><img class="image-item" src="images/img-9.jpg" alt="img-9"></li>
+                    <li><img class="image-item" src="images/img-10.jpg" alt="img-10"></li>
+                </ul>
+            </div>
+            <div class="progress-bar"></div>
         </div>
     </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    <!-- Footer END -->
 
     <!--Smooth Scroll Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script>
         (function () {
-            const locomotiveScroll = new LocomotiveScroll();
+            const locomotiveScroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true,
+                smartphone: {
+                    smooth: true,
+                },
+            });
         })();
     </script>
 
