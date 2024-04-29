@@ -10,7 +10,8 @@
   All Devices Responsive (Mobile/Tablet/iPad/Desktop/Laptop)
 </h2> <br/>
 
-[LIVE DEMO PROJECT](https://scss-mastery.vercel.app/)
+[Reference Project](https://www.frontendpractice.com/projects/basic) <br/>
+[LIVE PROJECT](https://scss-mastery.vercel.app/)
 
 ## SCSS and others
 
