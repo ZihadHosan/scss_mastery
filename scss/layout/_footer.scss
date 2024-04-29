@@ -51,6 +51,7 @@
 
         @include mxw-600 {
             grid-template-columns: auto;
+            grid-gap: 3vh;
         }
     }
 
