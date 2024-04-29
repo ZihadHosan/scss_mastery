@@ -1,4 +1,5 @@
 
+  
 <p align="center">
 </p>
 <h1 align="center">
@@ -7,17 +8,19 @@
 
 [LIVE DEMO PROJECT](https://scss-mastery.vercel.app/)
 
-## SCSS and its uses
+## SCSS and others
 
-1. Mixin
-2. Variables
-3. Deep Nesting
-4. Media query with mixin
-5. Flex
-6. Grid
-7. Fluid unit values for auto adapt in any screen
-8. WebP images support
-9. Dark mode (in progress..)
+1. 100% hand coded clean code
+2. BEM naming style in HTML/SCSS [Footer and Featured News block]
+3. Mixin
+4. Variables
+5. Deep Nesting
+6. Media query with mixin
+7. Flex
+8. Grid
+9. Fluid unit values for auto adapt in any screen
+10. WebP images support
+11. Dark mode (in progress..)
 
 ## Google PageSpeed
 
@@ -34,4 +37,4 @@
 	   
 ## Gtmetrix
 
-   Check live here : <br/>  https://gtmetrix.com/reports/scss-mastery.vercel.app/EIzAEM5v/ 
+   Check live here : <br/>  https://gtmetrix.com/reports/scss-mastery.vercel.app/EIzAEM5v/
