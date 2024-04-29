@@ -5,7 +5,7 @@
   Project for SCSS Practice
 </h1>
 
-[LIVE DEMO PROJECT](scss-mastery.vercel.app/)
+[LIVE DEMO PROJECT](https://scss-mastery.vercel.app/)
 
 ## SCSS and its uses
 
