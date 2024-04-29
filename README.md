@@ -4,11 +4,11 @@
 </p>
 <h1 align="center">
   Project for SCSS Practice
-</h1> <br/>
+</h1> 
 
 <h2 align="center">
   All Devices Responsive (Mobile/Tablet/iPad/Desktop/Laptop)
-</h2>
+</h2> <br/>
 
 [LIVE DEMO PROJECT](https://scss-mastery.vercel.app/)
 
