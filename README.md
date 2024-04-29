@@ -1,2 +1,1 @@
-### scss_mango
- SCSS Mastery
+SCSS Mastery
