@@ -19,10 +19,21 @@
     // Logo Style
     .logo {
         text-transform: uppercase;
-        font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1920 - 320)));
 
         a {
             color: $color-tertiary;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                max-width: calc(40px + (120 - 40) * ((100vw - 320px) / (1920 - 320)));
+                width: 100%;
+
+                path {
+                    fill: #fff;
+                }
+            }
         }
     }
 
