@@ -1,7 +1,18 @@
 // colors
-$color-primary: #f9cdcd;
-$color-secondary: #252422;
-$color-tertiary: #f4f4f4;
+//$color-primary: #252422;
+//$color-secondary: #f4f4f4;
+
+$colors: (
+    primary: #252422,
+    secondary: #f4f4f4,
+);
+
+// Dark theme
+$colors-dark: (
+    primary: #f4f4f4,
+    secondary: #252422,
+);
+
 
 // font
 $font-family-primary: 'Scto Grotesk A', sans-serif;

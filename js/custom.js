@@ -10,3 +10,22 @@ document.querySelector('.hamburger').addEventListener('click', () => {
     }
 });
 
+
+// Light/Dark Mode
+const root = document.documentElement;
+let currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+root.setAttribute('data-theme', currentTheme);
+
+const themeSwitcherBtn = document.querySelector('.theme-btn');
+themeSwitcherBtn.textContent = currentTheme === 'light' ? 'Dark' : 'Light';
+
+themeSwitcherBtn.addEventListener('click', () => {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  root.setAttribute('data-theme', currentTheme);
+  themeSwitcherBtn.textContent = currentTheme === 'dark' ? 'Light' : 'Dark';
+  localStorage.setItem('theme', currentTheme);
+});
+
+
+
+

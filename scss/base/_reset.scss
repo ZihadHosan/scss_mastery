@@ -5,10 +5,15 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 100%; // 16px
   font-family: $font-family-primary;
+
+  background-color: getColor(secondary);
+  color: getColor(primary);
 }
+
 body,
 h1,
 h2,
@@ -24,12 +29,14 @@ dd {
   margin: 0;
   padding: 0;
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -42,7 +49,7 @@ a{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #333333;
+  background-color: getColor(primary);
   border-radius: 20px;
 }
 
