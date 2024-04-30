@@ -1,8 +1,11 @@
 .footer {
+
     &__section {
-        background-color: getColor(primary);
+        background-color: getColor(secondary);
         padding-top: 10vh;
-        color: getColor(secondary);
+        color: getColor(primary);
+        border-top: 1px solid getColor(primary);
+        margin-top: 10vh;
     }
 
     &__top {
@@ -20,16 +23,16 @@
         }
 
         path {
-            fill: getColor(secondary);
+            fill: getColor(primary);
         }
     }
 
     &__about_text {
-        color: getColor(secondary);
+        color: getColor(primary);
         font-size: 31px;
 
         a {
-            color: getColor(secondary);
+            color: getColor(primary);
             text-decoration: underline;
         }
     }
@@ -67,7 +70,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50px;
-            background-color: getColor(secondary);
+            background-color: getColor(primary);
             left: 0px;
             top: 50%;
             transform: translateY(-50%);
@@ -79,10 +82,10 @@
             width: 100%;
             background-color: transparent;
             border: 0;
-            border-bottom: 1px solid getColor(secondary);
+            border-bottom: 1px solid getColor(primary);
             padding: 2vh 0;
             outline: none;
-            color: getColor(secondary);
+            color: getColor(primary);
         }
 
         .btn_primary {
@@ -97,7 +100,7 @@
             }
 
             a {
-                color: getColor(secondary);
+                color: getColor(primary);
                 font-size: 17px;
 
                 &:hover {
