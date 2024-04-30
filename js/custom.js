@@ -17,14 +17,23 @@ let currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers
 root.setAttribute('data-theme', currentTheme);
 
 const themeSwitcherBtn = document.querySelector('.theme-btn');
-themeSwitcherBtn.textContent = currentTheme === 'light' ? 'Dark' : 'Light';
+const themeIcon = document.querySelector('.theme-icon');
+
+// Set the initial icon
+updateThemeIcon();
 
 themeSwitcherBtn.addEventListener('click', () => {
   currentTheme = currentTheme === 'light' ? 'dark' : 'light';
   root.setAttribute('data-theme', currentTheme);
-  themeSwitcherBtn.textContent = currentTheme === 'dark' ? 'Light' : 'Dark';
+  updateThemeIcon();
   localStorage.setItem('theme', currentTheme);
 });
+
+function updateThemeIcon() {
+  const iconSrc = currentTheme === 'dark' ? 'images/icons/sun.svg' : 'images/icons/moon.svg';
+  themeIcon.src = iconSrc;
+  themeIcon.alt = currentTheme === 'dark' ? 'Moon' : 'Sun';
+}
 
 
 

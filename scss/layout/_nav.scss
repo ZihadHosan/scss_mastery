@@ -104,10 +104,21 @@
 
     /* END of nav style */
 
-    .them_setting {
+    .theme_setting {
         display: flex;
         align-items: center;
         gap: 1.5vw;
+
+        @include mxw-600 {
+            gap: 12px;
+        }
+
+        .theme-icon {
+            @include image-invert();
+            max-width: 30px;
+            width: 100%;
+            cursor: pointer;
+        }
     }
 
     // Hamburger Style
