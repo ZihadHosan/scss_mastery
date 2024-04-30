@@ -3,7 +3,7 @@
 <p align="center">
 </p>
 <h1 align="center">
-  Project for SCSS Practice
+  SCSS Project with Dark/Light Mode
 </h1> 
 
 <h2 align="center">
