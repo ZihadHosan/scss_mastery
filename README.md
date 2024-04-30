@@ -25,7 +25,7 @@
 8. Grid
 9. Fluid unit values for auto adapt in any screen
 10. WebP images support
-11. Dark mode (in progress..)
+11. Dark mode
 
 ## Google PageSpeed
 
