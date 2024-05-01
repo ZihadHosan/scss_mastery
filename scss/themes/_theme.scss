@@ -34,10 +34,7 @@
     @return var(--color-#{$color-name});
 }
 
-@function getColorValue($color-name) {
-    $color: getColor($color-name);
-    @return color-mod($color) r(), color-mod($color) g(), color-mod($color) b();
-}
+
 
 // Image inversion mixin
 @mixin image-invert() {

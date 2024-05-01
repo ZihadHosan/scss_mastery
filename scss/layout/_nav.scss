@@ -21,6 +21,9 @@
     // Logo Style
     .logo {
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         a {
             color: getColor(secondary);
